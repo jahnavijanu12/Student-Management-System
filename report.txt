@@ -1,6 +1,0 @@
------Student Report-----
-
-Total Students: 7
-Average Age: 23.43
-Highest Marks: 96.0
-Lowest Marks: 60.0
