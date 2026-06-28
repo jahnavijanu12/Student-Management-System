@@ -7,7 +7,7 @@ public class FileManager {
         try{
             FileWriter fw = new FileWriter("students.txt");
             for(Student s : students){
-                fw.write(s.id + "," + s.name + "," + s.age + "," + s.marks + "\n");
+                fw.write(s.getId() + "," + s.getName() + "," + s.getAge() + "," + s.getMarks() + "\n");
             }
             fw.close();
         }catch(Exception e){
@@ -22,6 +22,9 @@ public class FileManager {
             String line;
             while((line = br.readLine()) != null){
                 String[] arr = line.split(",");
+                if(arr.length != 4){
+                    continue;
+                }
                 int id = Integer.parseInt(arr[0]);
                 String name = arr[1];
                 int age = Integer.parseInt(arr[2]);
@@ -30,7 +33,7 @@ public class FileManager {
             }
             br.close();
         }catch(Exception e){
-            System.out.println("No old data found");
+            System.out.println("Error loading file: " + e);
 
         }
         return students;

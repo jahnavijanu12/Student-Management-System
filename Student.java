@@ -1,10 +1,10 @@
 class Student{
-    int id;
-    String name;
-    int age;
-
-    double marks;
-    String grade;
+    private int id;
+    private String name;
+    private int age;
+    private double marks;
+    private String grade;
+    
 
     Student(int id,String name,int age,double marks){
         this.id = id;
@@ -13,7 +13,7 @@ class Student{
         this.marks = marks;
         calculateGrade();
     }
-    void calculateGrade(){
+    private void calculateGrade(){
         if(marks >= 90){
             grade = "A";
         }else if(marks >= 75){
@@ -24,7 +24,39 @@ class Student{
             grade = "FAIL";
         }
     }
-    void display(){
+
+    //getters
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public double getMarks(){
+        return marks;
+    }
+    public String getGrade(){
+        return grade;
+    }
+
+    //setters
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setAge(int age){
+        this.age = age;
+    }
+    public void setMarks(double marks){
+        this.marks = marks;
+        calculateGrade(); 
+    }
+
+
+
+    public void display(){
         System.out.println("ID: "+id+" | Name: "+name+" | Age: "+age+" | Marks: "+marks+" | Grade: "+grade);
     }
 }

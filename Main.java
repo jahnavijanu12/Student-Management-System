@@ -36,6 +36,7 @@ class Main {
             System.out.println(" 14 Highest Marks");
             System.out.println(" 15 Lowest Marks");
             System.out.println(" 16 Exit");
+            System.out.println("17 Export Students to CSV");
 
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
@@ -72,7 +73,7 @@ class Main {
                     System.out.print("Enter id to search: ");
                     try{
                     int searchId = sc.nextInt();
-                    ss.searchStudent(searchId);
+                    ss.searchStudentById(searchId);
                     }catch(Exception e){
                         System.out.println("Invalid input. Please enter a valid id.");
                         sc.nextLine();
@@ -157,6 +158,9 @@ class Main {
                     System.out.println("Exiting...");
                     sc.close();
                     return;
+                case 17:
+                    ss.exportToCSV();
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }                    
