@@ -1,21 +1,37 @@
-# Student Management System
+# Student Management System | Java
 
-A Java console-based application to manage student records using OOP and file handling.
+A console-based Student Management System developed using Java that allows users to manage student records through CRUD operations, authentication, file handling, sorting, and report generation.
 
-## Features
-- User Login
-- CRUD Operations
-- File Handling
-- Sorting
-- Dashboard
-- Report Export
-- CSV Export
+## 🚀 Features
 
-## Technologies
+- 🔐 User Login Authentication
+- ➕ Add Student
+- 📋 View Students
+- 🔍 Search Student
+- ✏️ Update Student
+- ❌ Delete Student
+- 🔢 Sort Students
+- 📁 File Handling
+- 📄 Report Export
+- 📊 Dashboard Statistics
+- 📄 CSV Export
+
+## 🛠 Technologies Used
+
 - Java
-- OOP
-- Collections
+- Object-Oriented Programming (OOP)
+- Collections Framework
 - File Handling
+- Exception Handling
+
+## 📚 Concepts Practiced
+
+- Classes and Objects
+- Encapsulation
+- Collections (ArrayList)
+- File Handling
+- Exception Handling
+- Modular Programming
   
 ## 📁 Project Structure
 
@@ -42,18 +58,38 @@ Student-Management-System/
 ## 📸 Screenshots
 
 ### Login Page
-![Login](screenshots/login.png)
+
+![Login Screen](screenshots/login.png)
+
+---
 
 ### Main Menu
-![Menu](screenshots/menu.png)
 
-### Report Page
+![Main Menu](screenshots/menu.png)
+
+---
+
+### Generated Report
+
 ![Report](screenshots/report.png)
 
+## ▶️ Run Project
 
-## Run
 Compile:
+
+```bash
 javac *.java
+```
 
 Run:
+
+```bash
 java Main
+```
+
+## 🚀 Future Improvements
+
+- Add GUI using Java Swing
+- Connect MySQL Database
+- Add Spring Boot Backend
+- Build Web Version
