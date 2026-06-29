@@ -16,8 +16,10 @@ A Java console-based application to manage student records using OOP and file ha
 - OOP
 - Collections
 - File Handling
+  
+## 📁 Project Structure
 
-## Project Structure
+```plaintext
 Student-Management-System/
 │
 ├── Main.java
@@ -25,15 +27,19 @@ Student-Management-System/
 ├── StudentService.java
 ├── FileManager.java
 ├── LoginService.java
+│
 ├── students.txt
 ├── report.txt
 ├── students.csv
+│
 ├── screenshots/
 │   ├── login.png
 │   ├── menu.png
 │   └── report.png
 │
 └── README.md
+```
+
 
 ## Run
 Compile:
