@@ -39,6 +39,16 @@ Student-Management-System/
 │
 └── README.md
 ```
+## 📸 Screenshots
+
+### Login Page
+![Login](screenshots/login.png)
+
+### Main Menu
+![Menu](screenshots/menu.png)
+
+### Report Page
+![Report](screenshots/report.png)
 
 
 ## Run
